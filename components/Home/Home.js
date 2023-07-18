@@ -16,20 +16,26 @@ const Home = () => {
 
 
   return (
-    //Everything inside pageLayout 
-    <PageLayout>
-      <div className='grid grid-cols-2 w-full items-start mt-2'>
+   
+      <div className='grid sm:grid-cols-2 w-full items-start mt-2 min-h-[90vh] sm:px-12 px-4 bg-[#FAF7F0] overflow-hidden'>
         {/* left title */}
         <div className='flex flex-col gap-6'>
-            <h1 style={{lineHeight:"60px"}} className='text-[45px] text-[#2B2B2B] capitalize font-semibold'>Create an obituary, in less than a minute!</h1>
+          <div>
+          <h1 className='text-[28px] sm:text-[45px] leading-tight text-[#2B2B2B] sm:capitalize font-bold'>Create an obituary, in less than a minute!</h1>
+              <p className='text-[19px] font-medium mt-1 text-[#2B2B2B]'>
+              Remembering departed loved one
+            </p>
+          </div>
             
             {/* List details start here */}
-            <ul className='flex flex-col gap-4'>
+            <ul className='flex gap-2'>
+              
+              <div className='flex flex-col gap-4'>
               {
                 ListDetails.map((list) => (
-                  <li className='text-[#2B2B2B] text-[17px] flex items-center gap-2'>
+                  <li className='text-[#2B2B2B] text-xs sm:text-[17px] flex items-center gap-2'>
                     {/* list icon */}
-                    <i>
+                    <i className='sm:scale-100 scale-75'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
                       <path d="M0 10.056C0 4.88156 4.21994 0.661621 9.39438 0.661621C14.5688 0.661621 18.7888 4.88156 18.7888 10.056C18.7888 15.2305 14.5688 19.4504 9.36926 19.4504C4.21994 19.4253 0 15.2305 0 10.056ZM15.2973 7.01664C15.2973 6.91617 15.2219 6.86593 15.1466 6.8157C14.7447 6.4138 14.3176 6.0119 13.9409 5.58488C13.765 5.38393 13.6646 5.38393 13.4636 5.58488C11.5797 7.46878 9.69581 9.35268 7.83703 11.2366C7.63608 11.4375 7.56072 11.4124 7.38489 11.2366C6.68157 10.5081 5.95313 9.80482 5.27492 9.10149C5.12421 8.95078 5.04885 8.9759 4.92326 9.10149C4.49624 9.55363 4.06922 9.98065 3.61709 10.4077C3.4915 10.5081 3.46638 10.5835 3.61709 10.7091C4.89814 11.9901 6.20431 13.2712 7.46025 14.5522C7.58584 14.703 7.6612 14.6778 7.78679 14.5522C8.03798 14.2759 8.28916 14.0499 8.54035 13.7736C10.7257 11.5882 12.9361 9.3778 15.1214 7.19248C15.1717 7.14224 15.247 7.092 15.2973 7.01664Z" fill="#2B2B2B"/>
                     </svg>
@@ -42,13 +48,20 @@ const Home = () => {
                   </li>
                 ))
               }
+              </div>
+              
+
+            {/* for mobile screen right image  */}
+                <div className='sm:hidden w-full'>    
+                  <img className='w-full' src='/images/image 2.png' alt='image'/>
+                </div>
             </ul>
             
             {/* Create button memorial page */}
             <div className='mt-2'>
               <Link href="#"
                 style={{background:"linear-gradient(90deg, #83553C 0%, #CD956F 100%)"}}
-                className='w-[280px] p-2 flex justify-between items-center rounded-md'  
+                className='w-full sm:w-[280px] p-4 sm:p2 flex justify-between items-center rounded-md'  
               >
                 <p className='text-white'>Create a memorial page</p>
 
@@ -71,7 +84,7 @@ const Home = () => {
         </div>
         {/* end slider */}
       </div>
-    </PageLayout>
+
   )
 }
 

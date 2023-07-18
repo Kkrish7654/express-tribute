@@ -5,7 +5,7 @@ const PageLayout = ({children}) => {
   return (
     <>
       <Header/>
-      <div className='sm:px-12 px-2'>
+      <div className='bg-[#FAF7F0] overflow-hidden'>
         {children}
       </div>
     </>
