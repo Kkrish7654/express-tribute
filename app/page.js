@@ -9,7 +9,7 @@ const Main = () => {
   return (
     //Everything goes inside PageLayout
     <PageLayout>
-      <div className='overflow-hidden'>
+      <div className=''>
         <Home/>
         <HowThisWorks/>
         <Social/>

@@ -3,12 +3,12 @@ import Header from '../Header/Header'
 
 const PageLayout = ({children}) => {
   return (
-    <>
+    <div className=' overflow-hidden'>
       <Header/>
-      <div className='bg-[#FAF7F0] overflow-hidden'>
+      <div className='bg-[#FAF7F0]'>
         {children}
       </div>
-    </>
+    </div>
   )
 }
 

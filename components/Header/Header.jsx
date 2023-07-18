@@ -54,7 +54,7 @@ const Header = () => {
 
   return (
     <div className='bg-[#FAF7F0]'>
-      <nav className='relative flex justify-between items-center py-6 sm:px-12 px-4'>
+      <nav className='relative flex justify-between items-center py-6 sm:px-12 px-4 '>
         <ul className='hidden sm:block'>
           <li className='flex items-center gap-6'>
             {/* Mapping all navlinks here */}
@@ -68,6 +68,7 @@ const Header = () => {
         </ul>
 
         {/****** Navbar for mobile screen *******/}
+      
             <div ref={navbarRef} style={{boxShadow:isOpen?'0 9999px 0 999999px #0009':""}}
              className={`absolute bg-white h-screen p-6 py-12 w-[75%] top-0 right-0 z-50 transition-all duration-300 ${isOpen ? "right-0" : "right-[-100%]"}`}>
               <div className='flex items-start justify-between'>
@@ -114,6 +115,7 @@ const Header = () => {
                 <i><img src="/icons/link 1.png" alt="link" /></i>
               </div>
             </div>
+            
         {/**** end *****/}
 
         {/* Logo */}
