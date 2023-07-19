@@ -33,6 +33,7 @@ const HowThisWorks = () => {
         <h4 className='font-semibold text-[#2B2B2B] text-[20px] sm:text-[28px] mb-4'>How this works</h4>
       </div>
 
+      {/* render icons for desktop */}
       <div className='hidden sm:grid grid-cols-4 gap-4 '>
         {
           CardDetails.map((card) => (
@@ -41,6 +42,7 @@ const HowThisWorks = () => {
         }
       </div>
 
+      {/* icons for mobile screen */}
       <div className='sm:hidden'>
         <img className='w-full scale-95 ' src='/images/Tributes.png' alt='icons' />
       </div>

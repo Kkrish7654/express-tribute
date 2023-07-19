@@ -78,6 +78,7 @@ const GetStarted = () => {
 
               </Link>
             </div>
+            {/* end submit button */}
         </div>
         {/* end */}
       </div>
