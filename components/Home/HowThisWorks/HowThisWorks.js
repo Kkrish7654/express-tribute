@@ -1,7 +1,5 @@
 import React from 'react'
 import HowItWorksCard from '../../Cards/HowItWorksCard'
-import PageLayout from '../../Layouts/PageLayout'
-import MobileHowWorks from '@/components/Cards/MobileHowWorks'
 
 const HowThisWorks = () => {
 
@@ -44,7 +42,7 @@ const HowThisWorks = () => {
       </div>
 
       <div className=''>
-        <img className='w-full ' src='/images/Tributes.png' alt='icons' />
+        <img className='w-full scale-95 ' src='/images/Tributes.png' alt='icons' />
       </div>
     </div>
     </div>
