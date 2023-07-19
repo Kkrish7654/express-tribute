@@ -1,8 +1,10 @@
 import React from 'react'
-import Home from '@/components/Home/Home'
-import HowThisWorks from '@/components/Home/HowThisWorks'
+import Home from '@/components/Home/Main/Home'
+import HowThisWorks from '@/components/Home/HowThisWorks/HowThisWorks'
 import PageLayout from '@/components/Layouts/PageLayout'
-import Social from '@/components/Home/Social'
+import Social from '@/components/Home/Social/Social'
+import GetStarted from '@/components/Home/GetStarted/GetStarted'
+import Tributes from '@/components/Home/Tributes/Tributes'
 
 const Main = () => {
   // Main page
@@ -13,6 +15,8 @@ const Main = () => {
         <Home/>
         <HowThisWorks/>
         <Social/>
+        <GetStarted/>
+        <Tributes/>
       </div>
     </PageLayout>
     

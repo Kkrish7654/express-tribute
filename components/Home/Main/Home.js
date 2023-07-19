@@ -1,5 +1,5 @@
 import React from 'react'
-import PageLayout from '../Layouts/PageLayout'
+import PageLayout from '../../Layouts/PageLayout'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
    
-      <div className='grid sm:grid-cols-2 w-full items-start min-h-[90vh] sm:px-12 px-4 bg-[#FAF7F0]'>
+      <div className='grid sm:grid-cols-2 sm:justify-end sm:items-center w-full sm:-my-10 min-h-[90vh] sm:px-12 px-4 bg-[#FAF7F0]'>
         {/* left title */}
         <div className='flex flex-col gap-6'>
           <div>
@@ -79,7 +79,7 @@ const Home = () => {
         {/* end title */}
 
         {/* Right slider */}
-        <div className='m-8'>
+        <div className='m-8 justify-self-end'>
           <Image width={600} height={300} src="/images/express-home.png" alt='home'/>
         </div>
         {/* end slider */}

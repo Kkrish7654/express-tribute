@@ -1,6 +1,6 @@
 import React from 'react'
-import HowItWorksCard from '../Cards/HowItWorksCard'
-import PageLayout from '../Layouts/PageLayout'
+import HowItWorksCard from '../../Cards/HowItWorksCard'
+import PageLayout from '../../Layouts/PageLayout'
 
 const HowThisWorks = () => {
 
@@ -28,10 +28,10 @@ const HowThisWorks = () => {
     },
   ]
   return (
-    <div className=" bg-[#FAF7F0]">
-     <div className=" h-[60vh] bg-white w-full sm:px-12 px-4 pt-8">
+    <div className=" bg-[#FAF7F0] h-[70vh] flex items-center justify-center">
+     <div className="  bg-white w-full sm:px-12 px-4 pt-12 pb-12">
       <div>
-        <h4 className='font-semibold text-[#2B2B2B] text-[28px]'>How this works</h4>
+        <h4 className='font-semibold text-[#2B2B2B] text-[28px] mb-4'>How this works</h4>
       </div>
 
       <div className='grid grid-cols-4 gap-4'>

@@ -41,9 +41,9 @@ const Social = () => {
   };
 
   return (
-    <div className=" bg-[#FAF7F0]">
-     <div className=" h-[60vh] w-full sm:px-12 px-4 pt-12 grid grid-cols-2">
-        <div >
+    <div className=" bg-[#FAF7F0] h-[60vh] flex items-center justify-center">
+     <div className="  w-full sm:px-12 px-4 pt-12 pb-12 grid grid-cols-2 items-start justify-between">
+        <div className=''>
         <h4 className='font-semibold text-[28px] text-[#2B2B2B]'>Share across social network </h4>
           <p className='text-sm text-[#2B2B2B]'>Get memorial webpage link to share</p>
 
@@ -58,9 +58,9 @@ const Social = () => {
 
 
       {/* Right side slider carousel */}
-      <div>
+      <div className='float-right'>
         <div className='relative'>        
-          <Slider {...settings} className='pl-12 pr-4'>
+          <Slider {...settings} className='pl-10 pr-8'>
             <div className='flex'>
               <img src='/images/image 321.png' alt='img'/>
             </div>
