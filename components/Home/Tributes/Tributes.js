@@ -12,8 +12,8 @@ const Tributes = () => {
   ]
   return (
     <div className=" bg-[#FAF7F0] h-[60vh] flex items-center justify-center">
-    <div className="  w-full sm:px-12 px-4 pt-12 pb-12 grid grid-cols-2 items-start justify-between">
-       <div className=''>
+    <div className="  w-full sm:px-12 px-4  pb-12 items-start justify-between">
+       <div className='flex items-center justify-between'>
         {/* section title */}
           <h4>Tributes of the day</h4>
 
