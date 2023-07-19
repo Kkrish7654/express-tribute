@@ -10,7 +10,7 @@ const Features = () => {
             <h4 className='text-[24px] font-semibold text-center text-[#2B2B2B]'>Features included with the memorial page</h4>
           </div>
 
-          <div className='grid sm:grid-cols-5 gap-4'>
+          <div className='grid md:grid-cols-5 gap-4'>
             <FeaturesCard icon="/icons/Layer_1.png" title="Comprehensive Memorial Profile"/>
             <FeaturesCard icon="/icons/Layer_2.png" title="Biography (Multiple Language)"/>
             <FeaturesCard icon="/icons/Layer_3.png" title="Comprehensive Memorial Profile"/>

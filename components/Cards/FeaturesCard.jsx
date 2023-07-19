@@ -2,9 +2,9 @@ import React from 'react'
 
 const FeaturesCard = ({icon, title}) => {
   return (
-    <div className='p-4 bg-white flex flex-col gap-4 items-center justify-center'>
+    <div className='p-4 bg-white flex sm:flex-col gap-4 items-center sm:justify-center'>
       <div>
-        <img src={icon} alt='icon'/>
+        <img className='border-2' src={icon} alt='icon'/>
       </div>
 
       <div className='text-center'>
