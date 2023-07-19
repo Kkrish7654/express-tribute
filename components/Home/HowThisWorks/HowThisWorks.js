@@ -43,11 +43,8 @@ const HowThisWorks = () => {
         }
       </div>
 
-      <div className='grid grid-cols-4 items-start justify-center sm:hidden'>
-        <MobileHowWorks icon="/icons/Frame 10.png" title="Create obituary" alt="icon"/>
-        <MobileHowWorks icon="/icons/Frame 10.png" title="Choose from templates" alt="icon"/>
-        <MobileHowWorks icon="/icons/Frame 3.png" title="Enter details" alt="icon"/>
-        <MobileHowWorks icon="/icons/Frame 4.png" title="Share across social media" alt="icon"/>
+      <div className=''>
+        <img className='w-full ' src='/images/Tributes.png' alt='icons' />
       </div>
     </div>
     </div>
