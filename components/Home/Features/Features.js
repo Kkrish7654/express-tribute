@@ -10,6 +10,7 @@ const Features = () => {
             <h4 className='text-[24px] font-semibold text-center text-[#2B2B2B]'>Features included with the memorial page</h4>
           </div>
 
+          {/* calling Features component */}
           <div className='grid md:grid-cols-5 gap-4'>
             <FeaturesCard icon="/icons/Layer_1.png" title="Comprehensive Memorial Profile"/>
             <FeaturesCard icon="/icons/Layer_2.png" title="Biography (Multiple Language)"/>
@@ -17,6 +18,7 @@ const Features = () => {
             <FeaturesCard icon="/icons/Layer_4.png" title="Include virtual service details"/>
             <FeaturesCard icon="/icons/Vector.png" title="Easy sharing across social media"/>
           </div>
+          {/* end component */}
 
           {/* Submit Button */}
           <div className='w-full flex items-center justify-center'>
@@ -36,6 +38,7 @@ const Features = () => {
 
               </Link>
             </div>
+          {/* submit end */}
       </div>
     </div>
   )
