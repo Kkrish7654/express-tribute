@@ -39,8 +39,8 @@ const Pricing = () => {
 
  
   return (
-    <div className=" bg-[#FAF7F0] min-h-[60vh] flex items-center justify-center">
-    <div className="  w-full sm:px-12 px-4  pb-12 items-start justify-between">
+    <div className=" bg-white min-h-[60vh] flex items-center justify-center">
+    <div className="  w-full sm:px-12 px-4 pt-12  pb-12 items-start justify-between">
       {/* title and description for the section */}
       <div className='text-center text-[#2B2B2B]'>
         <h4 className='text-[24px] font-semibold '>Pricing Plans</h4>
@@ -48,7 +48,7 @@ const Pricing = () => {
       </div>
 
       {/* All Pricing Cards */}
-      <div className='grid grid-cols-3 mt-6 justify-start items-start gap-4 h-full'>
+      <div className='grid sm:grid-cols-3 mt-6 justify-start items-start gap-6 h-full'>
 
          {/*Basic Card  */}
         <PricingCard 

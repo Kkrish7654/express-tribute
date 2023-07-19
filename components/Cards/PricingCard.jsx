@@ -5,10 +5,13 @@ const PricingCard = ({pricing_title, Lists, backgroundColor,textColor, price, ti
   return (
     <div 
     //style={{background:'linear-gradient(270deg, #D09770 0%, #C68E69 7.00%, #A67354 32.00%, #8E5F44 57.00%, #80533B 80.00%, #7C4F38 100%), linear-gradient(180deg, #CE956F 0%, #7C4F38 100%)'}}
-    className={`${backgroundColor} ${textColor} w-full border p-4 rounded-lg h-full flex flex-col justify-between`}>
+    className={`${backgroundColor} ${textColor} w-full border p-6 rounded-lg h-full flex flex-col justify-between`}>
       <div className='flex flex-col gap-4'>
-        <p className=''>{pricing_title}</p>
-        <h2 className='text-[26px] font-semibold'>{price}</h2>
+        <div className='flex sm:flex-col items-center sm:items-start justify-between'>
+          <p className=''>{pricing_title}</p>
+          <h2 className='text-[24px] sm:text-[26px] font-semibold'>{price}</h2>
+        </div>
+        
 
         <div>
           <ul className='flex flex-col gap-4'>
