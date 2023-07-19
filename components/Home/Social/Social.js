@@ -41,8 +41,8 @@ const Social = () => {
   };
 
   return (
-    <div className=" bg-[#FAF7F0] h-[60vh] flex items-center justify-center">
-     <div className="  w-full sm:px-12 px-4 pt-12 pb-12 grid grid-cols-2 items-start justify-between">
+    <div className=" bg-[#FAF7F0] h-auto sm:h-[60vh] items-center justify-center hidden sm:flex">
+     <div className="  w-full sm:px-12 px-4 pt-12 pb-12 grid sm:grid-cols-2 items-start justify-between">
         <div className=''>
         <h4 className='font-semibold text-[28px] text-[#2B2B2B]'>Share across social network </h4>
           <p className='text-sm text-[#2B2B2B]'>Get memorial webpage link to share</p>

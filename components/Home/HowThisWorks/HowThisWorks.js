@@ -1,6 +1,7 @@
 import React from 'react'
 import HowItWorksCard from '../../Cards/HowItWorksCard'
 import PageLayout from '../../Layouts/PageLayout'
+import MobileHowWorks from '@/components/Cards/MobileHowWorks'
 
 const HowThisWorks = () => {
 
@@ -28,18 +29,25 @@ const HowThisWorks = () => {
     },
   ]
   return (
-    <div className=" bg-[#FAF7F0] h-[70vh] flex items-center justify-center">
-     <div className="  bg-white w-full sm:px-12 px-4 pt-12 pb-12">
+    <div className=" bg-[#FAF7F0] sm:h-[80vh] flex items-center justify-center">
+     <div className="  bg-white w-full sm:px-12 px-4 pt-12 sm:pb-12">
       <div>
-        <h4 className='font-semibold text-[#2B2B2B] text-[28px] mb-4'>How this works</h4>
+        <h4 className='font-semibold text-[#2B2B2B] text-[20px] sm:text-[28px] mb-4'>How this works</h4>
       </div>
 
-      <div className='grid grid-cols-4 gap-4'>
+      <div className='hidden sm:grid grid-cols-4 gap-4 '>
         {
           CardDetails.map((card) => (
             <HowItWorksCard icon={card.icon} title={card.title} description={card.description}/>
           ))
         }
+      </div>
+
+      <div className='grid grid-cols-4 items-start justify-center sm:hidden'>
+        <MobileHowWorks icon="/icons/Frame 10.png" title="Create obituary" alt="icon"/>
+        <MobileHowWorks icon="/icons/Frame 10.png" title="Choose from templates" alt="icon"/>
+        <MobileHowWorks icon="/icons/Frame 3.png" title="Enter details" alt="icon"/>
+        <MobileHowWorks icon="/icons/Frame 4.png" title="Share across social media" alt="icon"/>
       </div>
     </div>
     </div>

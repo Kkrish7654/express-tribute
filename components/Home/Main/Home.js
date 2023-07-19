@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
    
-      <div className='grid sm:grid-cols-2 sm:justify-end sm:items-center w-full sm:-my-10 min-h-[90vh] sm:px-12 px-4 bg-[#FAF7F0]'>
+      <div className='grid sm:grid-cols-2 pt-4 sm:pt-0 sm:justify-end sm:items-center w-full sm:-my-10 h-auto sm:min-h-[90vh] sm:px-12 px-4 bg-[#FAF7F0]'>
         {/* left title */}
         <div className='flex flex-col gap-6'>
           <div>

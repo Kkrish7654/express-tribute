@@ -11,14 +11,14 @@ const GetStarted = () => {
   ]
 
   return (
-    <div className=" bg-white h-[100vh] flex flex-col items-center justify-center">
+    <div className=" bg-white sm:h-[100vh] flex flex-col items-center justify-center">
       {/* title for this section */}
-        <h4 className='text-center pt-12 text-[28px] font-semibold text-[#2B2B2B]'>Building a memorial page for your loved one is fast and simple.</h4>
-      <div className="  w-full sm:px-12 px-4 pt-4 grid grid-cols-2 gap-6 items-start justify-between pb-16">
+        <h4 className='text-center pt-12 px-4 text-[20px] sm:text-[28px] font-semibold text-[#2B2B2B]'>Building a memorial page for your loved one is fast and simple.</h4>
+      <div className="  w-full sm:px-12 px-4 pt-4 grid sm:grid-cols-2 gap-6 items-start justify-between pb-16">
 
         {/* Left */}
         <div className='mt-4'>
-          <ul className='flex flex-col gap-8'>
+          <ul className='flex flex-col gap-4 sm:gap-8'>
             {
               // mapping through lists
               Lists.map((list, index) => (
@@ -26,7 +26,7 @@ const GetStarted = () => {
                   <div className="absolute left-0 p-2 w-10 h-10 bg-[#A87354] rounded-full text-center text-white">
                     {index+1}
                   </div>
-                  <span className='text-[15px] pl-8 text-[#525252]'>{list.title}</span>
+                  <span className='text-[13px] sm:text-[15px] pl-8 text-[#525252]'>{list.title}</span>
                 </li>
               ))
             }
@@ -35,8 +35,8 @@ const GetStarted = () => {
         {/* end */}
 
         {/* Right */}
-        <div className='border h-[95%] rounded-md m-4 w-full border-[#A87354] p-6 px-12 flex flex-col gap-6 justify-center items-start'>
-            <h4 className='font-semibold text-[16px] capitalize'>I want to share memories of</h4>
+        <div className='sm:border sm:h-[95%] rounded-md sm:m-4 w-full border-[#A87354] p-4 sm:p-6 sm:px-12 flex flex-col gap-6 justify-center items-start'>
+            <h4 className='font-normal sm:font-semibold text-[16px] capitalize'>I want to share memories of</h4>
 
             {/* First Name Input */}
             <div className='relative w-full'>
