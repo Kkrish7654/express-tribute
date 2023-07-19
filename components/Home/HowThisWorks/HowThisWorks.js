@@ -41,7 +41,7 @@ const HowThisWorks = () => {
         }
       </div>
 
-      <div className=''>
+      <div className='sm:hidden'>
         <img className='w-full scale-95 ' src='/images/Tributes.png' alt='icons' />
       </div>
     </div>
